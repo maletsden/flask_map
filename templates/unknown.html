@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Sorry, but there is no user with nickname "{{ nickname }}"<br>
+    You will be redirected to previous form in 1000ms
+
+    <script>
+        setTimeout(() => {
+            window.location.replace("/");
+        }, 1000);
+    </script>
+</body>
+</html>

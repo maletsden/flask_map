@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_6f1fab6c3e994cd899faf83d6b10b29f {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_6f1fab6c3e994cd899faf83d6b10b29f" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_6f1fab6c3e994cd899faf83d6b10b29f = L.map(
+        'map_6f1fab6c3e994cd899faf83d6b10b29f', {
+        center: [0, 0],
+        zoom: 1,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_0203469bf58d48c08c21ba29c86a2c76 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_6f1fab6c3e994cd899faf83d6b10b29f);
+    
+        var marker_43adec8b16b54cadabca15935b8c9f52 = L.marker(
+            [46.9599823, 22.0541733],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_6f1fab6c3e994cd899faf83d6b10b29f);
+        
+    
+
+                var icon_65f0bc89b0824146a236134ce6f4f893 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_43adec8b16b54cadabca15935b8c9f52.setIcon(icon_65f0bc89b0824146a236134ce6f4f893);
+            
+    
+            var popup_061da66bf9574821b96c629d99ada0f9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_298ea7287b5d4f15a36315e9ff9672aa = $(`<div id="html_298ea7287b5d4f15a36315e9ff9672aa" style="width: 100.0%; height: 100.0%;"> <div style="display:flex;flex-direction:column;justify-content:center;">   <img src="https://pbs.twimg.com/profile_images/1092100446586630146/3uFY0wpD_normal.jpg">   <div>     Twitter,   </div>   <div>     Everywhere   </div> </div></div>`)[0];
+                popup_061da66bf9574821b96c629d99ada0f9.setContent(html_298ea7287b5d4f15a36315e9ff9672aa);
+            
+
+            marker_43adec8b16b54cadabca15935b8c9f52.bindPopup(popup_061da66bf9574821b96c629d99ada0f9)
+            ;
+
+            
+        
+    
+        var marker_2f44b92747d741a6a498575de5d0fe94 = L.marker(
+            [28.4677048, -81.3086477],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_6f1fab6c3e994cd899faf83d6b10b29f);
+        
+    
+
+                var icon_1f226d6c6a194ff58735fb66da1e1c0a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2f44b92747d741a6a498575de5d0fe94.setIcon(icon_1f226d6c6a194ff58735fb66da1e1c0a);
+            
+    
+            var popup_86712cd96b014976a10e5ee21a32d47b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c4b31fa437ff4728bd7362b75f61d9ab = $(`<div id="html_c4b31fa437ff4728bd7362b75f61d9ab" style="width: 100.0%; height: 100.0%;"> <div style="display:flex;flex-direction:column;justify-content:center;">   <img src="https://pbs.twimg.com/profile_images/1050827437024714753/Dieo0gWi_normal.jpg">   <div>     ZackRyder,   </div>   <div>     Long Island, NY & Orlando, FL   </div> </div></div>`)[0];
+                popup_86712cd96b014976a10e5ee21a32d47b.setContent(html_c4b31fa437ff4728bd7362b75f61d9ab);
+            
+
+            marker_2f44b92747d741a6a498575de5d0fe94.bindPopup(popup_86712cd96b014976a10e5ee21a32d47b)
+            ;
+
+            
+        
+    
+        var marker_ed8577eacfcb4540ab69172141bdfc7f = L.marker(
+            [46.9599823, 22.0541733],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_6f1fab6c3e994cd899faf83d6b10b29f);
+        
+    
+
+                var icon_07ee3450ce8a4d87a95bac374c804a32 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ed8577eacfcb4540ab69172141bdfc7f.setIcon(icon_07ee3450ce8a4d87a95bac374c804a32);
+            
+    
+            var popup_6dd2d8e4d8ae4173a1038307e58f4210 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bb5018597a1c43a9bd01565af9e3e43a = $(`<div id="html_bb5018597a1c43a9bd01565af9e3e43a" style="width: 100.0%; height: 100.0%;"> <div style="display:flex;flex-direction:column;justify-content:center;">   <img src="https://pbs.twimg.com/profile_images/1085171257572839426/Vjv8og34_normal.jpg">   <div>     TweetDeck,   </div>   <div>     Everywhere   </div> </div></div>`)[0];
+                popup_6dd2d8e4d8ae4173a1038307e58f4210.setContent(html_bb5018597a1c43a9bd01565af9e3e43a);
+            
+
+            marker_ed8577eacfcb4540ab69172141bdfc7f.bindPopup(popup_6dd2d8e4d8ae4173a1038307e58f4210)
+            ;
+
+            
+        
+    
+        var marker_e4a0a0750e3443329a64b141156003a6 = L.marker(
+            [41.0534302, -73.5387341],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_6f1fab6c3e994cd899faf83d6b10b29f);
+        
+    
+
+                var icon_3d17875e175d40a6b2d47790eb3cffe8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e4a0a0750e3443329a64b141156003a6.setIcon(icon_3d17875e175d40a6b2d47790eb3cffe8);
+            
+    
+            var popup_5a3a0533cd99495ab94b1bcf708a494d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a5faf61a31c644c4bf5ab5f68243daf9 = $(`<div id="html_a5faf61a31c644c4bf5ab5f68243daf9" style="width: 100.0%; height: 100.0%;"> <div style="display:flex;flex-direction:column;justify-content:center;">   <img src="https://pbs.twimg.com/profile_images/913268006/youtubefannationicon_normal.jpg">   <div>     WWEVote,   </div>   <div>     Stamford, CT   </div> </div></div>`)[0];
+                popup_5a3a0533cd99495ab94b1bcf708a494d.setContent(html_a5faf61a31c644c4bf5ab5f68243daf9);
+            
+
+            marker_e4a0a0750e3443329a64b141156003a6.bindPopup(popup_5a3a0533cd99495ab94b1bcf708a494d)
+            ;
+
+            
+        
+    
+        var marker_89b08dbe0b5145838bbae46d2248a222 = L.marker(
+            [46.9599823, 22.0541733],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_6f1fab6c3e994cd899faf83d6b10b29f);
+        
+    
+
+                var icon_825f40e1a0f44695ad5996c3030f259f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_89b08dbe0b5145838bbae46d2248a222.setIcon(icon_825f40e1a0f44695ad5996c3030f259f);
+            
+    
+            var popup_bec984d7a48647cc8109c99dbc080622 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2b5b8d5883ed48caa0ffba1f2dbee783 = $(`<div id="html_2b5b8d5883ed48caa0ffba1f2dbee783" style="width: 100.0%; height: 100.0%;"> <div style="display:flex;flex-direction:column;justify-content:center;">   <img src="https://pbs.twimg.com/profile_images/1092100446586630146/3uFY0wpD_normal.jpg">   <div>     Twitter,   </div>   <div>     Everywhere   </div> </div></div>`)[0];
+                popup_bec984d7a48647cc8109c99dbc080622.setContent(html_2b5b8d5883ed48caa0ffba1f2dbee783);
+            
+
+            marker_89b08dbe0b5145838bbae46d2248a222.bindPopup(popup_bec984d7a48647cc8109c99dbc080622)
+            ;
+
+            
+        
+    
+        var marker_d5079f7c848b4506b6f39684ba2a0a14 = L.marker(
+            [28.4677048, -81.3086477],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_6f1fab6c3e994cd899faf83d6b10b29f);
+        
+    
+
+                var icon_da4d149a84c742a994498fc52593a53e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d5079f7c848b4506b6f39684ba2a0a14.setIcon(icon_da4d149a84c742a994498fc52593a53e);
+            
+    
+            var popup_0ab99e3e9ff64e2cb5843ab34d21db17 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_55d27c77f11a425aab16f475efcc8502 = $(`<div id="html_55d27c77f11a425aab16f475efcc8502" style="width: 100.0%; height: 100.0%;"> <div style="display:flex;flex-direction:column;justify-content:center;">   <img src="https://pbs.twimg.com/profile_images/1050827437024714753/Dieo0gWi_normal.jpg">   <div>     ZackRyder,   </div>   <div>     Long Island, NY & Orlando, FL   </div> </div></div>`)[0];
+                popup_0ab99e3e9ff64e2cb5843ab34d21db17.setContent(html_55d27c77f11a425aab16f475efcc8502);
+            
+
+            marker_d5079f7c848b4506b6f39684ba2a0a14.bindPopup(popup_0ab99e3e9ff64e2cb5843ab34d21db17)
+            ;
+
+            
+        
+    
+        var marker_7e392f5c0d0245b4b045d4e282221be0 = L.marker(
+            [46.9599823, 22.0541733],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_6f1fab6c3e994cd899faf83d6b10b29f);
+        
+    
+
+                var icon_26e03e121623407e91d3d2611ac62195 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7e392f5c0d0245b4b045d4e282221be0.setIcon(icon_26e03e121623407e91d3d2611ac62195);
+            
+    
+            var popup_cc704d30310b48aa88df49867168f989 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_709072db23b9448bacefd72ff9115690 = $(`<div id="html_709072db23b9448bacefd72ff9115690" style="width: 100.0%; height: 100.0%;"> <div style="display:flex;flex-direction:column;justify-content:center;">   <img src="https://pbs.twimg.com/profile_images/1085171257572839426/Vjv8og34_normal.jpg">   <div>     TweetDeck,   </div>   <div>     Everywhere   </div> </div></div>`)[0];
+                popup_cc704d30310b48aa88df49867168f989.setContent(html_709072db23b9448bacefd72ff9115690);
+            
+
+            marker_7e392f5c0d0245b4b045d4e282221be0.bindPopup(popup_cc704d30310b48aa88df49867168f989)
+            ;
+
+            
+        
+    
+        var marker_ed155905a7c3445494c9495bbf1a3226 = L.marker(
+            [41.0534302, -73.5387341],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_6f1fab6c3e994cd899faf83d6b10b29f);
+        
+    
+
+                var icon_d4ccf595d4db49599a9089193941aff8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ed155905a7c3445494c9495bbf1a3226.setIcon(icon_d4ccf595d4db49599a9089193941aff8);
+            
+    
+            var popup_79a150f71d0e40a192a2f12a27998151 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a5dc46c957234e79a2cfe9a327fc8c42 = $(`<div id="html_a5dc46c957234e79a2cfe9a327fc8c42" style="width: 100.0%; height: 100.0%;"> <div style="display:flex;flex-direction:column;justify-content:center;">   <img src="https://pbs.twimg.com/profile_images/913268006/youtubefannationicon_normal.jpg">   <div>     WWEVote,   </div>   <div>     Stamford, CT   </div> </div></div>`)[0];
+                popup_79a150f71d0e40a192a2f12a27998151.setContent(html_a5dc46c957234e79a2cfe9a327fc8c42);
+            
+
+            marker_ed155905a7c3445494c9495bbf1a3226.bindPopup(popup_79a150f71d0e40a192a2f12a27998151)
+            ;
+
+            
+        
+</script>

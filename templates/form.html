@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter friend</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/form.css') }}">
+
+<!--<link rel="stylesheet" href="form.css">
+--></head>
+
+<body>
+  <form action="/nickname" method="post" id="form">
+    <h1>Map Generator</h1>
+    <div>
+      Enter the nickname of Twitter user:
+    </div>
+    <input type="text" name="nickname" id="nickname">
+    <div>
+      Enter the amount of friends you want to see:
+    </div>
+    <input type="text" name="limit" id="limit">
+    <input type="submit">
+  </form>
+
+  <script>
+    document.getElementById('form').onsubmit = () => {
+      return document.getElementById('nickname').value !== '' && document.getElementById('limit').value !== '';
+    };
+  </script>
+</body>
+
+</html>
